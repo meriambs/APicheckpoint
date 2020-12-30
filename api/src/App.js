@@ -4,8 +4,8 @@ import UserList from './UserList'
 function App() {
   return (
     <div className="App">
-      <div><h2>User List</h2></div>
-      <div  style={{listStyle:"none"}}>
+      <div style={{textAlign:"center",textTransform:"uppercase",color:"lavander"}} ><h2>User List</h2></div>
+      <div  style={{letterSpacing:"3px"}}>
     <UserList/></div>
     </div>
   );

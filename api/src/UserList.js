@@ -16,14 +16,17 @@ import axios from 'axios'
     },[])
   
   return (
-    <div>
-  
-  <p>
+    <div >
+  <ul style={{padding:"5px",listStyle:"none"}}>
+  <li style={{background:"#cabed4",margin:"5px"}}>
       {
-    posts.map(post=><li key={post.id}>{post.username}</li>)
+    posts.map(post=><li style={{paddingBottom:"10px", border:'solid'}} key={post.id}><p style={{background:'black',color:'white'}}>name:</p>{post.name}
+    <br/> <p>email:</p>{post.email}
+    <br/><p>adress:</p>
+    {post.address.street}</li>)
       }
-  </p>
-     
+  </li>
+     </ul>
     </div>
   )
 }
